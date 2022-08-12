@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, useNavigate } from "react-router-dom";
+import styled from "styled-components";
+import HomePage from "./components/homepage/HomePage";
+import NavBar from "./components/navbar/NavBar";
+import PortfolioPage from "./components/portfoliopage/PortfolioPage";
+
+const Header = styled.header`
+  width: 100%;
+  position: sticky;
+  top: 0;
+`;
+
+const Content = styled.div`
+  /* background: linear-gradient(
+    90deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(33, 33, 33, 1) 50%,
+    rgba(18, 18, 18, 1) 100%
+  ); */
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header>
+        <NavBar />
+      </Header>
+      <Content>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <HomePage />
+            }
+          />
+          <Route
+            path="/works"
+            element={
+              <PortfolioPage />
+            }
+          />
+        </Routes>
+      </Content>
+    </>
   );
 }
 
