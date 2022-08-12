@@ -1,14 +1,10 @@
 import { Routes, Route, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import HomePage from "./components/homepage/HomePage";
-import NavBar from "./components/navbar/NavBar";
+import Header from "./components/header/Header";
+// import NavBar from "./components/navbar/NavBar";
 import PortfolioPage from "./components/portfoliopage/PortfolioPage";
 
-const Header = styled.header`
-  width: 100%;
-  position: sticky;
-  top: 0;
-`;
 
 const Content = styled.div`
   /* background: linear-gradient(
@@ -24,9 +20,7 @@ const Content = styled.div`
 function App() {
   return (
     <>
-      <Header>
-        <NavBar />
-      </Header>
+      <Header />
       <Content>
         <Routes>
           <Route
