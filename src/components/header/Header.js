@@ -1,6 +1,7 @@
 import './header.css'
 import HeaderSocials from './HeaderSocials'
 import Resume from './Resume'
+import MEBW from '../../assets/me-transparent-bw.png'
 import ME from '../../assets/me-transparent.png'
 
 function Header() {
@@ -16,7 +17,7 @@ function Header() {
                 <HeaderSocials />
 
                 <div className="me">
-                    <img src={ME} alt="Max Murphy headshot" />
+                    <img src={MEBW} alt="Max Murphy headshot" />
                 </div>
                 <a href="#contact" className='scroll__down'>Scroll Down</a>
             </div>

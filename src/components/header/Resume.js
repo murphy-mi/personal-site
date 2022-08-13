@@ -3,7 +3,7 @@ import CV from '../../assets/CV.pdf'
 
 function Resume() {
     return (
-        <div classname="resume">
+        <div className="resume">
             <a href={CV} target='_blank' rel='noopener noreferrer' className='btn'>View Resume</a>
             <a href="#contact" className='btn btn-primary'>Contact Me</a>
         </div>
