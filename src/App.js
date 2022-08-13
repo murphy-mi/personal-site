@@ -2,8 +2,11 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import HomePage from "./components/homepage/HomePage";
 import Header from "./components/header/Header";
-// import NavBar from "./components/navbar/NavBar";
-import PortfolioPage from "./components/portfoliopage/PortfolioPage";
+import NavBar from "./components/navbar/NavBar";
+import About from "./components/about/About";
+import Experience from "./components/experience/Experience";
+import Contact from "./components/contact/Contact";
+import Portfolio from "./components/portfolio/Portfolio";
 
 
 const Content = styled.div`
@@ -21,7 +24,12 @@ function App() {
   return (
     <>
       <Header />
-      <Content>
+      <NavBar />
+      <About />
+      <Experience />
+      <Portfolio />
+      <Contact />
+      {/* <Content>
         <Routes>
           <Route
             path="/"
@@ -36,7 +44,7 @@ function App() {
             }
           />
         </Routes>
-      </Content>
+      </Content> */}
     </>
   );
 }
