@@ -7,18 +7,12 @@ import { DiRuby } from 'react-icons/di'
 function About() {
     return (
         <section id="about">
-            <h5>Get To Know Me</h5>
             <h2>About Me</h2>
 
             <div className="container about__container">
-                <div className="about__me">
-                    <div className='about__me-image'>
-                        <img src="" alt="About" />
-                    </div>
-                </div>
 
                 <div className="about__content">
-                    <div className="about__cards">
+                    {/* <div className="about__cards">
                         <article className="about__card">
                             <SiJavascript className="about__icon" />
                             <h5>Experience</h5>
@@ -34,10 +28,10 @@ function About() {
                             <h5>Experience</h5>
                             <small> Less than 1 Year</small>
                         </article>
-                    </div>
+                    </div> */}
 
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        I'm a graduate of Flatiron School's Software Engineering program, and a professional learner. I hold a degree in Media and Information from Michigan State University, and have transitioned to software engineering after a brief yet fruitful career in audio engineering and sound design. The desire to understand and improve the systems around me brought me here, and the endless opportunity for creative expression and growth keeps me here.
                     </p>
 
                     <a href="#contact" className="btn btn-primary">Let's Talk</a>

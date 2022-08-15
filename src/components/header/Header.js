@@ -2,7 +2,7 @@ import './header.css'
 import HeaderSocials from './HeaderSocials'
 import Resume from './Resume'
 import MEBW from '../../assets/me-transparent-bw.png'
-import ME from '../../assets/me-transparent.png'
+// import ME from '../../assets/me-transparent.png'
 
 function Header() {
     return (

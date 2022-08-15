@@ -8,6 +8,7 @@ const data = [
         id: 1,
         image: HOPPERS,
         title: 'Hopper\'s Books',
+        description: "Secure Rails/React app for an eCommerce site for a frog-themed bookstore.",
         github: 'https://github.com/murphy-mi/hoppers-books',
         live: 'http://hoppersbooks.maxmmurphy.com/'
     },
@@ -15,6 +16,7 @@ const data = [
         id: 2,
         image: SPATS,
         title: 'Spats',
+        description: "React/Rails app for viewing your top tracks and artists on Spotify.",
         github: 'https://github.com/murphy-mi/phase-4-project-frontend',
         live: 'http://spats.maxmmurphy.com/'
     },
@@ -22,6 +24,7 @@ const data = [
         id: 3,
         image: ETT,
         title: 'Extraterrestrial Twinning',
+        description: "React app featuring a space-themed card-matching game.",
         github: 'https://github.com/murphy-mi/phase-2-project',
         live: 'https://ettwinning.netlify.app/'
     }
@@ -35,13 +38,14 @@ function Portfolio() {
             <h2>Portfolio</h2>
             <div className="container portfolio__container">
                 {
-                    data.map(({ id, image, title, github, live }) => {
+                    data.map(({ id, image, title, description, github, live }) => {
                         return (
                             <article key={id} className="portfolio__item">
                                 <div className="portfolio__item-image">
                                     <img src={image} alt={title} />
                                 </div>
                                 <h3>{title}</h3>
+                                <p>{description}</p>
                                 <div className='portfolio__item-cta'>
                                     <a href={github} className="btn">Github</a>
                                     <a href={live} className="btn btn-primary" target="_blank">Live</a>

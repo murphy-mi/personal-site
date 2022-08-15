@@ -42,14 +42,15 @@ header {
 
 .me {
     background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 22.5rem;
+    width: 28rem;
+    height: 30rem;
     position: absolute;
-    left: calc(50% - 11rem);
+    /* taking 50% and subtracting half the width to center it */
+    left: calc(50% - 14rem);
     margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
+    border-radius: 14rem 14rem 0 0;
     overflow: hidden;
-    padding: 3rem 1.5rem 1.5rem 3rem;
+    padding: 5.5rem 1.5rem 1.5rem 3rem;
 }
 
 /* SCROLL DOWN */
@@ -72,7 +73,34 @@ header {
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
     header {
-        height: 100vh;
+        height: 90vh;
+    }
+
+    .me {
+        height: 40vh;
+        width: 38vh;
+        left: calc(50% - 19vh);
+        padding: 5rem 1.5rem 1.5rem 3rem;
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+}
+
+/* MEDIA QUERIES (EXTRA SMALL DEVICES) */
+@media screen and (max-width: 400px) {
+    header {
+        height: 95vh;
+    }
+
+    .me {
+        margin-top: 2rem;
+        height: 46vh;
+        width: 46vh;
+        left: calc(50% - 23vh);
+        padding: 3rem 1.5rem 1.5rem 3rem;
     }
 
     .header__socials,

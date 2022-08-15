@@ -1,7 +1,9 @@
 .about__container {
     display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+    /* grid-template-columns: 35%; */
+    /* gap: 15%; */
+    /* width: 50%;
+    place-items: center; */
 }
 
 .about__me {
@@ -64,8 +66,19 @@
 }
 
 .about__content p {
-    margin: 2rem 0 2.6rem;
+    margin: 1rem 0 2.6rem;
     color: var(--color-light);
+}
+
+/* MEDIA QUERIES (ALL LARGER SCREENS) */
+@media screen and (min-width: 1024px) {
+    .about__container {
+
+        /* grid-template-columns: 35%; */
+        /* gap: 15%; */
+        width: 50%;
+        place-items: center;
+    }
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
@@ -73,6 +86,8 @@
     .about__container {
         grid-template-columns: 1fr;
         gap: 0;
+        /* width: 50%;
+        place-items: left; */
     }
 
     .about__me {
@@ -90,6 +105,8 @@
     .about__me {
         width: 65%;
         margin: 0 auto 3rem;
+        /* width: 100%;
+        place-items: left; */
     }
 
     .about__cards {
