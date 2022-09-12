@@ -21,28 +21,24 @@ function Experience() {
                             <SiJavascript className="experience__details-icon" />
                             <div>
                                 <h4>Javascript</h4>
-                                <small className="text-light">Experienced</small>
                             </div>
                         </article>
                         <article className="experience__details">
                             <FaReact className="experience__details-icon" />
                             <div>
                                 <h4>React</h4>
-                                <small className="text-light">Experienced</small>
                             </div>
                         </article>
                         <article className="experience__details">
                             <AiFillHtml5 className="experience__details-icon" />
                             <div>
                                 <h4>HTML</h4>
-                                <small className="text-light">Experienced</small>
                             </div>
                         </article>
                         <article className="experience__details">
                             <IoLogoCss3 className="experience__details-icon" />
                             <div>
                                 <h4>CSS</h4>
-                                <small className="text-light">Experienced</small>
                             </div>
                         </article>
                     </div>
@@ -54,21 +50,18 @@ function Experience() {
                             <DiRuby className="experience__details-icon" />
                             <div>
                                 <h4>Ruby</h4>
-                                <small className="text-light">Experienced</small>
                             </div>
                         </article>
                         <article className="experience__details">
                             <DiRor className="experience__details-icon" />
                             <div>
                                 <h4>Ruby on Rails</h4>
-                                <small className="text-light">Experienced</small>
                             </div>
                         </article>
                         <article className="experience__details">
                             <SiPostgresql className="experience__details-icon" />
                             <div>
                                 <h4>PostgreSQL</h4>
-                                <small className="text-light">Experienced</small>
                             </div>
                         </article>
                     </div>
