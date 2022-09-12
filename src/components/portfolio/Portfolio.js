@@ -18,7 +18,8 @@ const data = [
         title: 'Spats',
         description: "React/Rails app for viewing your top tracks and artists on Spotify.",
         github: 'https://github.com/murphy-mi/phase-4-project-frontend',
-        live: 'http://spats.maxmmurphy.com/'
+        live: 'http://spats.maxmmurphy.com/',
+        demo: 'https://www.loom.com/share/b0745638cd524d6cb237dd32ed1ca2df'
     },
     {
         id: 3,
@@ -38,7 +39,7 @@ function Portfolio() {
             <h2>Portfolio</h2>
             <div className="container portfolio__container">
                 {
-                    data.map(({ id, image, title, description, github, live }) => {
+                    data.map(({ id, image, title, description, github, live, demo }) => {
                         return (
                             <article key={id} className="portfolio__item">
                                 <div className="portfolio__item-image">
@@ -49,6 +50,7 @@ function Portfolio() {
                                 <div className='portfolio__item-cta'>
                                     <a href={github} className="btn">Github</a>
                                     <a href={live} className="btn btn-primary" target="_blank">Live</a>
+                                    {demo ? <a href={live} className="btn btn-primary" target="_blank">Demo</a> : null}
                                 </div>
                             </article>
                         )
