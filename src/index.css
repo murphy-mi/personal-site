@@ -18,6 +18,14 @@
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
+  /* Alternate color scheme: */
+  /* --color-bg: #0c4016ef;
+  --color-bg-variant: #5E807F;
+  --color-primary: #17B890;
+  --color-primary-variant: #d7f4edb4;
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.608); */
+
   --transition: all 400ms ease;
 
   --container-width-lg: 75%;

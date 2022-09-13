@@ -72,14 +72,14 @@ header {
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
     header {
-        height: 86vh;
+        height: 130vh;
     }
 }
 
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
     header {
-        height: 90vh;
+        height: 100vh;
     }
 
     .me {
