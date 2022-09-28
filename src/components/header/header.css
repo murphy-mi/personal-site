@@ -65,20 +65,20 @@ header {
 
 /* MEDIA QUERIES (LARGER DEVICES) */
 @media screen and (min-width: 1024px) {
-    header {
+    .container header__container {
         height: 150vh;
     }
 }
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
-    header {
+    .container header__container {
         height: 130vh;
     }
 }
 
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
-    header {
+    .container header__container {
         height: 100vh;
     }
 
@@ -97,7 +97,7 @@ header {
 
 /* MEDIA QUERIES (EXTRA SMALL DEVICES) */
 @media screen and (max-width: 400px) {
-    header {
+    .container header__container {
         height: 95vh;
     }
 
